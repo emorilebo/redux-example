@@ -16,6 +16,11 @@ export const userSlice = createSlice({
     logout: (state) => {
       state.user = null;
     },
+    // The function below is called a thunk and allows us to perform async logic. It
+    // can be dispatched like a regular action: `dispatch(incrementAsync(10))`. This
+    // will call the thunk with the `dispatch` function as the first argument. Async
+    // code can then be executed and other actions can be dispatched. Thunks are
+    // typically used to make async requests.
     // Use the PayloadAction type to declare the contents of `action.payload`
     // incrementByAmount: (state, action) => {
     //   state.value += action.payload;
